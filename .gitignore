@@ -1,0 +1,51 @@
+# Ignora node_modules (dependências do Node.js)
+node_modules/
+
+# Ignora arquivos de ambiente (variáveis sensíveis)
+.env
+.env.local
+.env.development
+.env.production
+
+# Ignora pastas de build/dist
+dist/
+build/
+
+# Ignora logs
+*.log
+logs/
+
+# Ignora configurações do IDE/Editor
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ignora arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignora arquivos de cache
+.cache/
+
+# Ignora arquivos de cobertura de testes
+coverage/
+
+# Ignora arquivos do npm/yarn
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Ignora arquivos do pnpm
+.pnpm-store/
+
+# Ignora arquivos do TypeScript
+*.tsbuildinfo
+
+# Ignora arquivos do NestJS (se houver)
+*.pid
+*.seed
