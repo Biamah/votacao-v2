@@ -1,4 +1,5 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { IsNotEmpty } from 'class-validator';
 
 @Entity()
 export class Pauta {
@@ -6,8 +7,10 @@ export class Pauta {
   id: number;
 
   @Column()
+  @IsNotEmpty({ message: 'Title is required' })
   title: string;
 
-  @Column()
+  @Column('text')
+  @IsNotEmpty({ message: 'Description is required' })
   description: string;
 }
