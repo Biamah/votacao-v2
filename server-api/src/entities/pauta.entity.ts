@@ -6,7 +6,7 @@ export class Pauta {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column()
+  @Column({ type: 'varchar' })
   @IsNotEmpty({ message: 'Title is required' })
   title: string;
 
